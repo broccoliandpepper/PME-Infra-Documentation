@@ -1,0 +1,39 @@
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node / tooling (au cas où tu ajoutes des scripts)
+node_modules/
+dist/
+build/
+*.log
+
+# Python (si tu génères des fichiers avec des scripts)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# Archives / exports
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Backup / temp files
+*~
+*.tmp
+*.bak
+
+# Draw.io / source binaries si tu ne veux pas tout committer
+*.pdf
+*.vsdx
+*.drawio.bkp
