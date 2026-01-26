@@ -1,8 +1,8 @@
-# 05 - Storage & Backup Strategy
+> **Disclaimer**: This document is a representation of previous professional missions and technical work for portfolio and educational purposes only. The information has been anonymized in compliance with data protection regulations. The author is not responsible for any use, interpretation, or implementation of the content described herein. This document does not constitute professional advice and should not be used as a basis for infrastructure decisions without proper assessment and validation.
 
 ## Overview
 
-This folder documents the storage and backup architecture used by K Creation & Production, combining cloud and on-prem solutions to ensure data protection, accessibility, and business continuity.
+This folder documents the storage and backup architecture, combining cloud and on-prem solutions to ensure data protection, accessibility, and business continuity.
 
 The strategy is designed to:
 
@@ -23,18 +23,18 @@ The strategy is designed to:
 | Component | Role | Location |
 |-----------|------|----------|
 | **SharePoint Online** | Primary user-facing storage and collaboration | Cloud (Microsoft 365) |
-| **QNAP NAS (Brussels)** | Backup of SharePoint, replication to Azure, replication to Budapest | VLAN 211 (Isolated) |
-| **QNAP NAS (Budapest)** | Remote backup copy, replication from Brussels | Budapest site |
+| **QNAP NAS (Primary Site)** | Backup of SharePoint, replication to Azure, replication to remote site | VLAN 211 (Isolated) |
+| **QNAP NAS (Remote Site)** | Remote backup copy, replication from primary site | Remote international site |
 | **Azure Storage** | Cloud backup target with immutability enabled | Azure (Public Cloud) |
 | **Windows Server** | Offline backup copy (disconnected after backup) | VLAN 211 (Isolated) |
 
 ## Design Rationale
 
-**Before cloud migration (Phase 1–2):**
+**Before cloud migration (Early phases):**
 
 - Heavy on-prem hardware (NetApp, tape library) was required.
 
-**After cloud adoption (Phase 4):**
+**After cloud adoption (Current phase):**
 
 - SharePoint Online reduced the need for heavy on-prem storage.
 - On-prem servers are repurposed as a **backup and archive ring**.

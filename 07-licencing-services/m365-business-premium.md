@@ -1,8 +1,8 @@
-# Microsoft 365 Business Premium
+> **Disclaimer**: This document is a representation of previous professional missions and technical work for portfolio and educational purposes only. The information has been anonymized in compliance with data protection regulations. The author is not responsible for any use, interpretation, or implementation of the content described herein. This document does not constitute professional advice and should not be used as a basis for infrastructure decisions without proper assessment and validation.
 
 ## Overview
 
-Microsoft 365 Business Premium is the primary productivity licence assigned to all K Creation & Production users.
+Microsoft 365 Business Premium is the primary productivity licence assigned to all users.
 
 It provides access to essential business applications, collaboration tools, and cloud services required across the entire organisation.
 
@@ -60,7 +60,7 @@ Microsoft 365 Business Premium includes:
 
 ## Scope Across Departments
 
-All K Creation & Production departments use Microsoft 365 Business Premium:
+All departments use Microsoft 365 Business Premium:
 
 - **Accounting**: Excel spreadsheets, Teams for finance collaboration, Outlook.
 - **HR**: Forms for surveys, Teams for announcements, SharePoint for policies.

@@ -1,8 +1,8 @@
-# Microsoft Defender Security Layer
+> **Disclaimer**: This document is a representation of previous professional missions and technical work for portfolio and educational purposes only. The information has been anonymized in compliance with data protection regulations. The author is not responsible for any use, interpretation, or implementation of the content described herein. This document does not constitute professional advice and should not be used as a basis for infrastructure decisions without proper assessment and validation.
 
 ## Overview
 
-K Creation & Production uses Microsoft Defender as a core part of its endpoint and threat protection strategy. This is built on:
+The organization uses Microsoft Defender as a core part of its endpoint and threat protection strategy. This is built on:
 
 - **Microsoft 365 Business Premium** licences for all users.
 - **Microsoft Defender for Endpoint P2** add-on.
@@ -25,7 +25,7 @@ Defender for Endpoint P1 is already included in Business Premium, but the enviro
 
 ## Why Defender for Endpoint P2
 
-According to the documentation:
+According to Microsoft documentation:
 
 - P2 offers enhanced features on top of P1.
 - It provides system administrators with:
@@ -65,5 +65,5 @@ The Defender layer covers:
 
 It complements:
 
-- The network security provided by WatchGuard and Veezo.
+- The network security provided by WatchGuard and AI security appliances.
 - The identity and access management implemented via Entra ID and Conditional Access.

@@ -1,8 +1,8 @@
-# Azure Services
+> **Disclaimer**: This document is a representation of previous professional missions and technical work for portfolio and educational purposes only. The information has been anonymized in compliance with data protection regulations. The author is not responsible for any use, interpretation, or implementation of the content described herein. This document does not constitute professional advice and should not be used as a basis for infrastructure decisions without proper assessment and validation.
 
 ## Overview
 
-Several Azure services are used to support the hybrid infrastructure, storage, security, and connectivity requirements of K Creation & Production.
+Several Azure services are used to support the hybrid infrastructure, storage, security, and connectivity requirements.
 
 ## Networking & Security
 

@@ -1,8 +1,8 @@
-# 04 - Azure Cloud Infrastructure
+> **Disclaimer**: This document is a representation of previous professional missions and technical work for portfolio and educational purposes only. The information has been anonymized in compliance with data protection regulations. The author is not responsible for any use, interpretation, or implementation of the content described herein. This document does not constitute professional advice and should not be used as a basis for infrastructure decisions without proper assessment and validation.
 
 ## Overview
 
-This folder documents the Azure-based cloud infrastructure used by K Creation & Production as part of the modern hybrid environment (2019–2025 and beyond).
+This folder documents the Azure-based cloud infrastructure used as part of the modern hybrid environment (Phase 3 and beyond).
 
 The Azure layer provides:
 

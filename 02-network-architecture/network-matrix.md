@@ -1,4 +1,4 @@
-# Network Device Matrix
+> **Disclaimer**: This document is a representation of previous professional missions and technical work for portfolio and educational purposes only. The information has been anonymized in compliance with data protection regulations. The author is not responsible for any use, interpretation, or implementation of the content described herein. This document does not constitute professional advice and should not be used as a basis for infrastructure decisions without proper assessment and validation.
 
 ## Physical Device Inventory
 
@@ -13,8 +13,8 @@
 
 | Device | Model | IP Address | VLAN | Function |
 |--------|-------|------------|------|----------|
-| Veezo Box 01 | ozOos Veezo | - | VLAN 215 | AI traffic inspection |
-| Veezo Box 02 | ozOos Veezo | - | VLAN 215 | AI traffic inspection |
+| AI Security Box 01 | Vendor A | - | VLAN 215 | AI traffic inspection |
+| AI Security Box 02 | Vendor A | - | VLAN 215 | AI traffic inspection |
 
 ### Switch Infrastructure
 
@@ -37,7 +37,7 @@
 | Dell Server 60TB | Dell | 60 TB | 172.16.211.2 | Backup server |
 | Dell Server 90TB | Dell | 90 TB | 172.16.210.210 | Production storage |
 | QNAP Archive | QNAP | - | 172.16.211.4 | Archive storage |
-| QNAP Budapest | QNAP | - | 172.16.211.10 | Remote backup replication |
+| QNAP Remote Site | QNAP | - | 172.16.211.10 | Remote backup replication |
 | Windows Backup Server | Windows Server | - | Dynamic (offline) | Offline backup |
 
 ### Proofing Equipment (VLAN 213)
@@ -94,21 +94,23 @@
 ## Cable Infrastructure
 
 ### Fiber Connections
+
 - **ISP → WatchGuard**: Single-mode fiber
 - **WatchGuard → Aruba (SFP)**: Multi-mode fiber (high-speed trunk)
 
 ### Copper Connections
+
 - **Aruba → End devices**: Cat6 UTP
 - **Cisco → Access Points**: Cat6 UTP (PoE)
 
-## Budapest Site Devices
+## Remote Site Devices
 
 | Device | Model | IP Address | Function |
 |--------|-------|------------|----------|
 | WatchGuard T45 | WatchGuard | - | Site firewall |
 | QNAP NAS | QNAP | 172.16.211.10 (over VPN) | Backup replication |
 
-**Connection**: Site-to-Site VPN to Brussels Firebox M390
+**Connection**: Site-to-Site VPN to Primary Site Firebox M390
 
 ## Device Access Summary
 
@@ -118,4 +120,4 @@
 | Switch Management | 219 | HTTPS, SSH | 443, 22 |
 | QNAP Web GUI | 219, 211 (limited) | HTTPS | 443, 8080 |
 | Server iDRAC/iLO | 219 | HTTPS | 443 |
-| Veezo Management | 215, 219 | HTTPS | 443 |
+| Security Appliance Management | 215, 219 | HTTPS | 443 |

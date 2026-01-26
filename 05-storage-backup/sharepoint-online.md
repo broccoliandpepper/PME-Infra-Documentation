@@ -1,8 +1,8 @@
-# SharePoint Online - Primary Storage Platform
+> **Disclaimer**: This document is a representation of previous professional missions and technical work for portfolio and educational purposes only. The information has been anonymized in compliance with data protection regulations. The author is not responsible for any use, interpretation, or implementation of the content described herein. This document does not constitute professional advice and should not be used as a basis for infrastructure decisions without proper assessment and validation.
 
 ## Overview
 
-SharePoint Online (part of Microsoft 365) is the main storage and collaboration platform used by K Creation & Production. It serves as the primary user-facing storage, replacing heavy on-prem file servers in previous phases.
+SharePoint Online (part of Microsoft 365) is the main storage and collaboration platform. It serves as the primary user-facing storage, replacing heavy on-prem file servers from previous phases.
 
 ## Usage
 
@@ -15,7 +15,7 @@ SharePoint Online provides:
 
 ## Data Volume Context
 
-In the packaging industry, the need for large storage volumes is fundamental. Since COVID-19, demand for remote work and access to large volumes of data has increased cloud storage costs significantly.
+In production environments with large file requirements, the need for substantial storage volumes is fundamental. The shift to remote work has increased demand for cloud storage access, impacting costs significantly.
 
 ## Maintenance & Housekeeping
 
@@ -31,7 +31,7 @@ Data stored in SharePoint Online is protected via:
 
 1. **QNAP NAS (Hybrid Backup Sync)**
    - Automatic backup of SharePoint Online.
-   - Can replicate to other QNAP devices (e.g. Budapest).
+   - Can replicate to other QNAP devices (e.g. remote site).
 
 2. **Azure Storage**
    - Additional backup target.

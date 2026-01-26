@@ -1,8 +1,8 @@
-# Microsoft Defender for Endpoint P2
+> **Disclaimer**: This document is a representation of previous professional missions and technical work for portfolio and educational purposes only. The information has been anonymized in compliance with data protection regulations. The author is not responsible for any use, interpretation, or implementation of the content described herein. This document does not constitute professional advice and should not be used as a basis for infrastructure decisions without proper assessment and validation.
 
 ## Overview
 
-Microsoft Defender for Endpoint P2 is an add-on licence assigned to all K Creation & Production users in addition to Microsoft 365 Business Premium.
+Microsoft Defender for Endpoint P2 is an add-on licence assigned to all users in addition to Microsoft 365 Business Premium.
 
 It provides advanced endpoint protection, threat detection, and incident response capabilities.
 
@@ -10,7 +10,7 @@ It provides advanced endpoint protection, threat detection, and incident respons
 
 Microsoft 365 Business Premium already includes **Defender for Endpoint P1**, which provides basic endpoint protection.
 
-K Creation & Production uses the **P2 upgrade** for enhanced features:
+The **P2 upgrade** provides enhanced features:
 
 - Advanced threat protection beyond P1 capabilities.
 - Comprehensive security dashboard for administrators.
@@ -81,13 +81,13 @@ Defender for Endpoint P2 covers:
 
 Defender for Endpoint P2 works alongside:
 
-- **Veezo** (on-prem network protection): Complements network-level threat detection.
+- **AI-based network protection** (on-prem): Complements network-level threat detection.
 - **Entra ID Conditional Access**: Device risk signals inform access decisions.
 - **Azure Firewall / WatchGuard**: Network-level filtering.
 
 Together, these layers provide:
 
-- Network protection (WatchGuard, Veezo).
+- Network protection (WatchGuard, AI security appliances).
 - Identity protection (Entra ID, Conditional Access).
 - Endpoint protection (Defender for Endpoint P2).
 - Cloud security (Azure Defender, Sentinel).
@@ -104,6 +104,7 @@ By assigning Defender for Endpoint P2 to all users:
 ## Example Scenarios
 
 ### Scenario 1: Malware Detection
+
 1. User downloads potentially malicious file.
 2. Defender for Endpoint P2 detects and blocks execution.
 3. Alert appears in admin dashboard.
@@ -111,6 +112,7 @@ By assigning Defender for Endpoint P2 to all users:
 5. Device remains compliant; no access restriction needed.
 
 ### Scenario 2: Unpatched System
+
 1. Device lacks critical security update.
 2. Vulnerability assessment flags this in dashboard.
 3. Intune compliance policy marks device as non-compliant.
@@ -118,6 +120,7 @@ By assigning Defender for Endpoint P2 to all users:
 5. User is prompted to apply updates.
 
 ### Scenario 3: Suspected Compromise
+
 1. EDR detects suspicious process behaviour.
 2. Alert raised in dashboard with forensic data.
 3. Administrator isolates device from network.

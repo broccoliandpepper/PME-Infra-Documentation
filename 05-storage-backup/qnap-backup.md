@@ -1,15 +1,15 @@
-# QNAP NAS - Backup and Replication
+> **Disclaimer**: This document is a representation of previous professional missions and technical work for portfolio and educational purposes only. The information has been anonymized in compliance with data protection regulations. The author is not responsible for any use, interpretation, or implementation of the content described herein. This document does not constitute professional advice and should not be used as a basis for infrastructure decisions without proper assessment and validation.
 
 ## Overview
 
 QNAP NAS devices are used to back up SharePoint Online data and replicate it across multiple locations for resilience.
 
-## Brussels QNAP (VLAN 211 - Isolated)
+## Primary Site QNAP (VLAN 211 - Isolated)
 
 - **Device name**: QNAP Archive / QNAP (as listed in network matrix).
 - **IP Address**: 172.16.211.4.
 - **Purpose**: Primary backup of SharePoint Online.
-- **Location**: Brussels office, isolated on VLAN 211 (disconnected from production traffic).
+- **Location**: Primary office, isolated on VLAN 211 (disconnected from production traffic).
 
 ### Hybrid Backup Sync
 
@@ -21,17 +21,17 @@ QNAP Hybrid Backup Sync provides:
   - SharePoint Online (via HTTPS).
   - Azure Storage (for additional cloud protection).
 
-### Replication to Budapest
+### Replication to Remote Site
 
-- QNAP-to-QNAP replication over VPN from Brussels to Budapest.
+- QNAP-to-QNAP replication over VPN from primary site to remote site.
 - Protocol: SMB (Server Message Block).
 - Purpose: Off-site copy for disaster recovery.
 
-## Budapest QNAP (Remote Site)
+## Remote Site QNAP
 
-- **Device name**: QNAP Budapest.
+- **Device name**: QNAP Remote Site.
 - **IP Address**: 172.16.211.10 (over VPN).
-- **Purpose**: Receives replication from Brussels QNAP.
+- **Purpose**: Receives replication from primary site QNAP.
 - **Network Access**: Over Site-to-Site VPN (WatchGuard).
 
 ## Network Isolation
@@ -53,10 +53,11 @@ This isolation:
 
 SharePoint Online
 ↓ (HTTPS)
-QNAP Brussels (172.16.211.4)
+QNAP Primary Site (172.16.211.4)
 ├─→ (HTTPS) Azure Storage
-└─→ (SMB over VPN) QNAP Budapest (172.16.211.10)
+└─→ (SMB over VPN) QNAP Remote Site (172.16.211.10)
 
+text
 
 ## Advantages
 

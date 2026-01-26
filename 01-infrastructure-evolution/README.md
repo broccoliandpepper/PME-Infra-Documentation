@@ -1,22 +1,24 @@
-01 - Infrastructure Evolution
+# 01 - Infrastructure Evolution
+
+> **Disclaimer**: This document is a representation of previous professional missions and technical work for portfolio and educational purposes only. The information has been anonymized in compliance with data protection regulations. The author is not responsible for any use, interpretation, or implementation of the content described herein. This document does not constitute professional advice and should not be used as a basis for infrastructure decisions without proper assessment and validation.
 
 ## Overview
 
-This folder documents the evolution of K Creation & Production’s infrastructure from a legacy on-premise environment to a modern hybrid cloud architecture. It is structured into four chronological phases, each describing the context, main components, and key changes introduced.
+This folder documents the evolution of a mid-sized production company's infrastructure from a legacy on-premise environment to a modern hybrid cloud architecture. It is structured into four chronological phases, each describing the context, main components, and key changes introduced.
 
 Contents:
 
 - `README.md` – This overview and timeline.
-- `phase1-legacy-onsite.md` – 2008–2014: On-site legacy infrastructure.
-- `phase2-hybrid-multisite.md` – 2014–2019: Hybrid multisite infrastructure.
-- `phase3-modern-hybrid.md` – 2019–2025: Modern hybrid infrastructure.
+- `phase1-legacy-onsite.md` – Phase 1: On-site legacy infrastructure.
+- `phase2-hybrid-multisite.md` – Phase 2: Hybrid multisite infrastructure.
+- `phase3-modern-hybrid.md` – Phase 3: Modern hybrid infrastructure.
 - `phase4-optimization.md` – Current optimization and cloud-first usage.
 
 ---
 
 ## Timeline
 
-- **2008 – 2014 – Phase 1: On-Prem Legacy Infrastructure**
+- **Phase 1: On-Prem Legacy Infrastructure (Years 1-6)**
   - Single-site on-prem Active Directory.
   - VMware ESX virtualisation.
   - NetApp storage, QNAP NAS.
@@ -24,17 +26,17 @@ Contents:
   - Approx. 25 VDI and 35 Mac workstations.
   - Local firewall cluster.
 
-- **2014 – 2019 – Phase 2: Hybrid Multisite Infrastructure**
+- **Phase 2: Hybrid Multisite Infrastructure (Years 7-11)**
   - Expansion to a **multisite** model:
-    - Brussels site.
-    - Villers-le-Bouillet datacenter site.
-    - Budapest site.
+    - Primary site (Main Office).
+    - Secondary datacenter site (DC Site).
+    - Remote international site (Site B).
   - VMware Horizon for VDI across sites.
-  - Veeam backup (rented, managed by Computerland).
+  - Veeam backup (rented, managed by external MSP).
   - QNAP-to-QNAP synchronised backups between sites.
   - On-prem Active Directory remains central.
 
-- **2019 – 2025 – Phase 3: Modern Hybrid Infrastructure**
+- **Phase 3: Modern Hybrid Infrastructure (Years 12-17)**
   - Introduction of **Azure** and modern Microsoft stack:
     - Azure Virtual Networks (Hub and Spoke with VNet peering).
     - Azure Firewall and VPN Gateway (including P2S VPN).
@@ -45,7 +47,7 @@ Contents:
   - SharePoint Online as main data collaboration platform.
   - Gradual move away from dependency on on-prem Active Directory.
 
-- **2025+ – Phase 4: Optimization & Cloud-First Usage**
+- **Phase 4: Optimization & Cloud-First Usage (Year 18+)**
   - SharePoint Online used as primary user-facing storage.
   - Reduced hardware requirements on-prem thanks to cloud adoption.
   - Repurposing on-prem servers as **backup and archive ring**.
@@ -61,7 +63,7 @@ Contents:
 
 ### `phase1-legacy-onsite.md`
 
-Documents the initial infrastructure (2008–2014):
+Documents the initial infrastructure (Phase 1):
 
 - On-prem Active Directory.
 - VMware ESX for server virtualisation.
@@ -73,18 +75,18 @@ Documents the initial infrastructure (2008–2014):
 
 ### `phase2-hybrid-multisite.md`
 
-Covers the move to a hybrid, multisite setup (2014–2019):
+Covers the move to a hybrid, multisite setup (Phase 2):
 
-- Brussels, Villers-le-Bouillet datacenter, Budapest.
+- Primary site, secondary datacenter site, remote international site.
 - On-prem Active Directory extended.
 - VMware Horizon for VDI on multiple sites.
-- Veeam backup rented and managed by Computerland.
+- Veeam backup rented and managed by external MSP.
 - Synchronised QNAP-to-QNAP backups.
 - Continued use of on-prem application servers and NAS.
 
 ### `phase3-modern-hybrid.md`
 
-Describes the introduction of Azure and modern Microsoft cloud services (2019–2025):
+Describes the introduction of Azure and modern Microsoft cloud services (Phase 3):
 
 - Hybrid infrastructure with on-prem AD and Entra ID.
 - Azure Virtual Networks with Hub and Spoke topology.
@@ -111,10 +113,10 @@ Focuses on optimisation and rationalisation of resources:
 
 ## Purpose of This Folder
 
-This folder acts as a **chronological narrative** of the infrastructure you managed:
+This folder acts as a **chronological narrative** of the infrastructure evolution:
 
 - Shows how the environment evolved technically and architecturally.
 - Highlights key decisions at each phase (virtualisation, multisite, hybrid cloud, optimisation).
 - Provides context for other folders (network architecture, security, backup strategy, Azure design).
 
-Each phase file is meant to be self-contained and can be read independently by a recruiter, architect, or technical lead to understand where the infrastructure was at that time and what role you had in its evolution.
+Each phase file is meant to be self-contained and can be read independently by a recruiter, architect, or technical lead to understand where the infrastructure was at that time and what decisions were made.

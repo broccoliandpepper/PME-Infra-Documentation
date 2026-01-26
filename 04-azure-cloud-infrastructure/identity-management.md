@@ -1,4 +1,4 @@
-# Identity Management (Entra ID)
+> **Disclaimer**: This document is a representation of previous professional missions and technical work for portfolio and educational purposes only. The information has been anonymized in compliance with data protection regulations. The author is not responsible for any use, interpretation, or implementation of the content described herein. This document does not constitute professional advice and should not be used as a basis for infrastructure decisions without proper assessment and validation.
 
 ## Overview
 
@@ -28,9 +28,9 @@ It complements and gradually replaces the dependency on on-prem Active Directory
   - For Azure resources such as Web Apps and management portals.
 
 - **External Users**
-  - Managed via Entra ID as “Entra Client” in the diagrams.
+  - Managed via Entra ID external user model.
   - Access controlled by Conditional Access policies.
-  - External user must request access through their KCP contact.
+  - External user must request access through their internal contact.
 
 ## Device Identity
 

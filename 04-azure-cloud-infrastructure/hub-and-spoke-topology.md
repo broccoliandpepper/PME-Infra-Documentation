@@ -1,4 +1,4 @@
-# Hub-and-Spoke Topology
+> **Disclaimer**: This document is a representation of previous professional missions and technical work for portfolio and educational purposes only. The information has been anonymized in compliance with data protection regulations. The author is not responsible for any use, interpretation, or implementation of the content described herein. This document does not constitute professional advice and should not be used as a basis for infrastructure decisions without proper assessment and validation.
 
 ## Overview
 
@@ -6,7 +6,7 @@ The Azure network infrastructure is built using a Hub-and-Spoke Virtual Network 
 
 ## Virtual Networks
 
-The diagrams show the following VNets and address spaces:
+The following VNets and address spaces are configured:
 
 - **Hub VNet**
   - Address space: `10.0.0.0/16`
@@ -59,9 +59,9 @@ This allows:
 
 ## On-Prem Connectivity
 
-The on-prem networks shown include:
+The on-prem networks include:
 
-- `172.16.0.0/16` – Brussels office LAN.
+- `172.16.0.0/16` – Primary office LAN.
 - `192.168.0.0/16` – Other on-prem segments.
 
 Connectivity between on-prem and Azure is achieved through:

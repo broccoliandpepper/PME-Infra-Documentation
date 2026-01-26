@@ -1,8 +1,8 @@
-# Veezo AI-Based Predictive Protection
+> **Disclaimer**: This document is a representation of previous professional missions and technical work for portfolio and educational purposes only. The information has been anonymized in compliance with data protection regulations. The author is not responsible for any use, interpretation, or implementation of the content described herein. This document does not constitute professional advice and should not be used as a basis for infrastructure decisions without proper assessment and validation.
 
 ## Role in the Architecture
 
-Two Veezo appliances are deployed between the WatchGuard Firebox M390 firewall and the Aruba switches. All traffic between the firewall and the internal network passes through this layer, allowing Veezo to:
+Two AI security appliances are deployed between the WatchGuard Firebox M390 firewall and the Aruba switches. All traffic between the firewall and the internal network passes through this layer, allowing the security appliances to:
 
 - Analyse all network packets in real time.
 - Detect vulnerabilities and security gaps.
@@ -10,7 +10,7 @@ Two Veezo appliances are deployed between the WatchGuard Firebox M390 firewall a
 
 This creates an AI-based predictive protection bridge across the network infrastructure.
 
-## Key Capabilities (as described by Veezo)
+## Key Capabilities
 
 ### 1. AI-Based Predictive Protection
 
@@ -29,7 +29,7 @@ This creates an AI-based predictive protection bridge across the network infrast
 
 ### 3. Continuous Vulnerability Diagnosis
 
-Veezo continuously diagnoses the infrastructure for vulnerabilities, focusing on:
+The AI security layer continuously diagnoses the infrastructure for vulnerabilities, focusing on:
 
 - Unauthorised VPN access from devices.
 - Human errors (e.g. temporary permission changes, overly permissive rules).
@@ -38,31 +38,29 @@ Veezo continuously diagnoses the infrastructure for vulnerabilities, focusing on
 - Weaknesses related to unmanaged devices.
 - Suspicious or dangerous behaviour such as phishing attempts.
 
-By reporting in these areas, Veezo helps organisations address threats proactively and improve their security posture.
+By reporting in these areas, the security layer helps organisations address threats proactively and improve their security posture.
 
 ### 4. Community-Based Improvement
 
-- The **Veezo Community** contributes to better accuracy and efficiency over time.
+- The vendor's community contributes to better accuracy and efficiency over time.
 - Collective intelligence improves detection capabilities and pattern recognition.
 
 ## Placement in the Network
 
-Veezo is positioned inline between:
+The AI security appliances are positioned inline between:
 
 - **Upstream**: WatchGuard Firebox M390 (L3 routing, VLANs, VPN, NAT).
 - **Downstream**: Aruba switches (L2 switching, VLAN distribution).
 
-This gives Veezo visibility on:
+This gives the security layer visibility on:
 
 - North–South traffic (Internet ↔ internal network).
 - East–West traffic (between VLANs and internal systems).
 
 ## Management
 
-- Veezo appliances are part of the security VLAN/management segment.
+- Security appliances are part of the security VLAN/management segment.
 - They provide dashboards and reporting for:
   - Vulnerabilities.
   - Dangerous behaviour.
   - Exposure and misconfigurations.
-
-Reference: https://veezo.org/whatuk.html (link included in original diagram).
